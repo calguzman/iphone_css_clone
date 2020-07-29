@@ -1,0 +1,169 @@
+// IPHONE CLONE BY CGUZMAN 
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.iphone{
+  width: 305px;
+  height:595px;
+  border-radius: 42px;
+  position: relative;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 90%);
+  -webkit-box-shadow: 0px 11px 23px 1px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 11px 23px 1px rgba(0,0,0,0.66);
+  box-shadow: 0px 11px 23px 1px rgba(0,0,0,0.66);
+  
+  &__display{
+    width: 275px;
+    height:560px;
+    border-radius: 25px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    // background-image: url("https://media.idownloadblog.com/wp-content/uploads/2019/09/iPhone-11-Pro-stock-wallpaper-via-AR72014-blue.png");
+    background-image: url("https://i.pinimg.com/originals/5e/ea/93/5eea932093ab8fc0fd494852f88d274f.jpg");
+    // background-image: url("https://i.pinimg.com/originals/68/a5/31/68a5314cfb76a4bdab9c142ecd57d4e6.png");
+    background-size: cover;
+  }
+  &__camera{
+    width: 150px;
+    height: 46px;
+    background-color: black;
+    border-radius: 40px;
+    position: absolute;
+    top:0px;
+    left:25%;  
+  }
+  &__lens{
+    width: 32px;
+    height: 7px;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    position: absolute;
+    top:23px;
+    left: 130px;
+    border-radius:10px;
+  }
+  &__flash{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top:19px;
+    left: 180px;
+    background-color: gray;
+    // background-color: #000000;
+    // background-image: linear-gradient(147deg, #000000 0%, #001624 74%);   
+  }
+  &__top-signals{
+    width: 30%;
+    position: absolute;
+    right:20px;
+    top: 30px;
+  }
+  &__clock{
+    width: 100%;
+    position: absolute;
+    top:100px;
+    color:white;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  &__date{
+    position: absolute;
+    top:170px;
+    margin-left: 25%;
+    color:white;
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  &__flash-light{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top:21px;
+    left: 181.50px;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  }
+  &__flash-light-oval{
+    width:1.5px;
+    height: 1.5px;
+    border-radius: 50%;
+    position: absolute;
+    top:26px;
+    left: 189px;
+    background-color: white;
+  }
+  &__button{
+    &--lock{
+      @extend .spacial-gray-button;
+      width:5px;
+      height: 68px;
+      border-radius: 60px;
+      top:136px;
+      right:-2px;
+    }
+    &--vol-up{
+      @extend .spacial-gray-button;
+      width:5px;
+      height: 40px;
+      border-radius: 60px;
+      top:136px;
+      left:-2px;
+    }
+    &--vol-down{
+      @extend .spacial-gray-button;
+      width:5px;
+      height: 40px;
+      border-radius: 60px;
+      top:186px;
+      left:-2px;
+   
+    }
+    &--mute{
+      @extend .spacial-gray-button;
+      width:3px;
+      height: 20px;
+      border-radius: 60px;
+      top:90px;
+      left:-2px;
+    }
+  }
+  .spacial-gray-button{
+    position: absolute;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  }
+  &__bottom-icons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+  }
+  &__camera-icon{
+    width: 15%; 
+  }
+  &__light-icon{
+    width: 15%; 
+  }
+  &__slide-bar{
+    width: 100px;
+    height: 4px;
+    border-radius: 60px;
+    position: absolute;
+    bottom: 30px;
+    left: 95px;
+    background-color: white;
+  }
+ 
+}
